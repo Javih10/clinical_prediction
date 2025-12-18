@@ -106,4 +106,4 @@ def adding_all_features(df):
 
 def drop_col_for_train(df):
     df = df.copy()
-    return df.drop(columns = ['readmitted', 'encounter_id', 'patient_nbr'])
+    return df.drop(columns = ['encounter_id', 'patient_nbr'])
