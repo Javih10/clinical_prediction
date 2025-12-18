@@ -4,7 +4,7 @@ from src.cleaning import drop_unwanted_columns, replacing_missing_values, readmi
 from src.features import adding_all_features, readmission_target, drop_col_for_train
 
 def finalizing_dataset(df):
-    df = load_raw_data(df)
+    df = load_raw_data()
     df = drop_unwanted_columns(df)
     df = replacing_missing_values(df)
     df = readmission_label(df)
