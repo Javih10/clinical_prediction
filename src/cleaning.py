@@ -45,6 +45,12 @@ def readmission_label(df):
     return df 
 
 def correcting_col_types(df):
+    
+    """corrects some of the variables types and converts them in categories making it easier to work with
+
+    Returns:
+        a df with the variables type changed
+    """
     df = df.copy()
     df['age'] = df['age'].astype('category')
     df['race'] = df['race'].astype('category')
