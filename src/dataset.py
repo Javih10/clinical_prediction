@@ -5,6 +5,12 @@ from src.cleaning import (drop_unwanted_columns, replacing_missing_values, readm
 from src.features import (adding_all_features, drop_col_for_train)
 
 def finalizing_dataset():
+    
+    """Instead of using all the other libraries this combines all previous libraries into one
+
+    Returns:
+        df: cleaned dataframe that is ready to be inspected and used for ML
+    """
     df = load_raw_data()
     df = drop_unwanted_columns(df)
     df = replacing_missing_values(df)
