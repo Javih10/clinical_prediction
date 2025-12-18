@@ -6,9 +6,7 @@ unwanted_columns = UNWANTED_COLS = [
     'patient_nbr',
     'weight',
     'payer_code',
-    'medical_specialty',
-    'examide',
-    'citoglipton'
+    'medical_specialty'
 ]
 
 def drop_unwanted_columns(df):
