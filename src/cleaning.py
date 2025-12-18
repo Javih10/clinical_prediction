@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np 
 
 unwanted_columns = UNWANTED_COLS = [
-    'encounter_id',
-    'patient_nbr',
     'weight',
     'payer_code',
     'medical_specialty'
