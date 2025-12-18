@@ -32,3 +32,26 @@ def replacing_missing_values(df):
     df = df.copy()
     df.replace('?',np.nan, inplace=True)
     return df
+
+def readmission_label(df):
+    """Creates readmission label for 30 days 
+
+    Args:
+        df (dataframe):dataframe containing the col readmission
+
+    Returns:
+        dataframe: return a dataframe with a new column 
+    """
+    df = df.copy()
+    df['readmitted_30'] = df['readmitted'].apply(
+        lambda x: 1 if x == '<30' else 0
+    )
+    return df 
+
+def correcting_col_types(df):
+    df = df.copy()
+    df['age'] = df['age'].astype('category')
+    df['race'] = df['race'].astype('category')
+    df['gender'] = df['gender'].astype('category')
+    
+    return df 
