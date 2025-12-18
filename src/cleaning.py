@@ -1,7 +1,7 @@
 import pandas as pd 
 import numpy as np 
 
-unwanted_columns = UNWANTED_COLS = [
+unwanted_column =  [
     'weight',
     'payer_code',
     'medical_specialty'
@@ -15,7 +15,7 @@ def drop_unwanted_columns(df):
         df (dataframe): with similar columns
     """
     df = df.copy()
-    return(df.drop(columns=unwanted_columns, errors='ignore'))
+    return(df.drop(columns=unwanted_column, errors='ignore'))
 
 def replacing_missing_values(df):
     """
