@@ -13,7 +13,7 @@ nums = (
     '250.4', '250.5', '250.6', '250.7', '250.8', '250.9'
 )
 
-def cleaning_up_cols(df):
+def renaming_cols(df):
     """_summary_
 
     Args:
@@ -104,11 +104,6 @@ def adding_all_features(df):
     
     return df
 
-def readmission_target(df):
-    df = df.copy()
-    df['readmitted_30'] = (df['readmitted'] == '<30').astype(int)
-    
-    return df
 
 def drop_col_for_train(df):
     df = df.copy()
