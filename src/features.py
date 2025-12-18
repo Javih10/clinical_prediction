@@ -96,14 +96,13 @@ def add_has_diabetes_complications(df):
 
 def adding_all_features(df):
     
-    df = cleaning_up_cols(df)
+    df = renaming_cols(df)
     df = total_visits_col(df)
     df = medication_changes(df)
     df = usage_of_insulin(df)
     df = add_has_diabetes_complications(df)
     
     return df
-
 
 def drop_col_for_train(df):
     df = df.copy()
