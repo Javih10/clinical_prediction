@@ -11,4 +11,5 @@ def finalizing_dataset():
     df = readmission_label(df)
     df = correcting_col_types(df)
     df = adding_all_features(df)
+    df = drop_col_for_train(df)
     return df
