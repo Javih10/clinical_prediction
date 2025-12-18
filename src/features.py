@@ -103,3 +103,13 @@ def adding_all_features(df):
     df = add_has_diabetes_complications(df)
     
     return df
+
+def readmission_target(df):
+    df = df.copy()
+    df['readmitted_30'] = (df['readmitted'] == '<30').astype(int)
+    
+    return df
+
+def drop_col_for_train(df):
+    df = df.copy()
+    return df.drop(columns = ['readmitted', 'encounter_id', 'patient_nbr'])
