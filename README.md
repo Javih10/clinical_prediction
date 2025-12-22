@@ -25,10 +25,11 @@ Predicting 3-day hospital readmission using clinical data, framed an imbalanced 
 
 ## Repository Strucrure 
 
-`` 
+```
 ├── data/              # Raw datasets
 ├── notebooks/         # Analysis notebooks 
 ├── src/               # .py files 
 ├── README.md          # Project overview
+
 ```
 
