@@ -48,10 +48,11 @@ Evaluation: AUC_ROC, Precision, Recall, F1-score
 ## Results
 | Model | ROC-AUC | Recall | Precision |
 |----------|----------|----------|-----------|
-
 | Logistic Regression | 0.64 | 0.54 | 0.16 |
-Random Forest | 0.66 | 0.55 | 0.17 |
-Gradient Boosting | 0.76 | 0.5 | 0.2 |
+|----------|----------|----------|-----------|
+|Random Forest | 0.66 | 0.55 | 0.17 |
+|----------|----------|----------|-----------|
+|Gradient Boosting | 0.76 | 0.5 | 0.2 |
  
 ## Intrepretability 
 - Feature importance and SHAP analysis was done.
