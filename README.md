@@ -17,7 +17,7 @@ Predicting 30-day hospital readmission using clinical data, framed an imbalanced
 ## Results
 - ROC AUC = 0.76
 - Recall = 50%
-- - Precision = 20%
+- Precision = 20%
  
 ## Intrepretability 
 - Feature importance and SHAP analysis was done.
