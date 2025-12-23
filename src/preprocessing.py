@@ -1,4 +1,5 @@
 import pandas as pd 
+import numpy as np 
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
@@ -30,7 +31,8 @@ def building_pipeline(cat_cols, num_cols):
     cat_trans = Pipeline(steps=[
         ('onehot', OneHotEncoder(
             handle_unknown='ignore',
-            sparse=False
+            sparse_output=False,
+            dtype=np.float64
         ))
     ])
     
