@@ -1,0 +1,1 @@
+{"random_state": 42, "test_size": 0.2, "stratified": true, "train_positive_rate": 0.11160516877118852, "test_positive_rate": 0.11157512036946055}
