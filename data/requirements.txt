@@ -1,0 +1,6 @@
+pandas==2.3.3
+seaborn=0.13.2
+json==2.0.9
+sklearn==1.8.0
+numpy==1.26.4
+shap==0.48.4
