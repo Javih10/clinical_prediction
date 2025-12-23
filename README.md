@@ -1,7 +1,7 @@
 # Hospital Readmission Risk Prediction 
 
 ## Overview 
-Predicting 3-day hospital readmission using clinical data, framed an imbalanced binary classification problem 
+Predicting 30-day hospital readmission using clinical data, framed an imbalanced binary classification problem 
 
 ## Data 
 - Kaggle: https://www.kaggle.com/datasets/brandao/diabetes
